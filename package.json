@@ -1,0 +1,29 @@
+{
+  "name": "nodejenkins",
+  "version": "1.0.0",
+  "description": "Easy hello en node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseYnez/NodeJenkins.git"
+  },
+  "author": "Jose Luis Yañez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseYnez/NodeJenkins/issues"
+  },
+  "homepage": "https://github.com/JoseYnez/NodeJenkins#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-errors": "^1.7.0",
+    "mysql": "^2.10.2"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "inherits": "^2.0.3",
+    "ms": "^2.1.1"
+  }
+}
