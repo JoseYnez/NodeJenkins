@@ -1,5 +1,6 @@
 node {
    def gitcommit
+   
    stage('Verificacion SCM') {
      checkout scm
      sh "git rev-parse --short HEAD > .git/commit-id"
@@ -13,9 +14,5 @@ node {
        sh 'npm test'
      }
    }   
-   post { 
-        always { 
-            echo 'I will always say Hello again!'
-        }
-    }                
+               
 }

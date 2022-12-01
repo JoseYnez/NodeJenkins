@@ -1,6 +1,7 @@
-node {
-   def gitcommit
-   stage('Verificacion SCM') {
+pipeline {
+    agent none
+    def gitcommit
+    stage('Verificacion SCM') {
      checkout scm
      sh "git rev-parse --short HEAD > .git/commit-id"
      gitcommit = readFile('.git/commit-id').trim()
@@ -12,5 +13,5 @@ node {
        sh 'npm install --only=dev'
        sh 'npm test'
      }
-   }                   
+   }  
 }
