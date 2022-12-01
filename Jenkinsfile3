@@ -1,5 +1,5 @@
 pipeline {
-    agent none
+    agent node
     def gitcommit
     stage('Verificacion SCM') {
      checkout scm
