@@ -14,6 +14,7 @@ node {
      }
    }    
    stage('build') {
+     sh 'ls'
      sh 'Dockerfile up -d'
    }                
 }
