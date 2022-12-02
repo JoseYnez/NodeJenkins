@@ -17,9 +17,6 @@ app.get('/ayuda', function (req, res) {
   res.send('AYUDA');
 });
 
-app.get('/game', function (req, res) {
-  res.send('gam');
-});
 
 var server = app.listen(3000, function () {
   var host = server.address().address;
