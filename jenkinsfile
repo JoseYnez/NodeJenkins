@@ -14,11 +14,6 @@ node {
      }
    }    
    stage('build') {
-     def contenedorbuild = docker.image('node:4.6')
-     contenedorbuild.pull()
-     contenedorbuild.inside {
-       sh 'npm i'
-       sh 'npm start'
-     }
+     sh 'docker ps'
    }                
 }
