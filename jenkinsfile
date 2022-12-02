@@ -15,10 +15,10 @@ node {
    }    
    stage('build') {
      def contenedorbuild = docker.image('node:4.6')
-     contenedortest.pull()
-     contenedortest.inside {
+     contenedorbuild.pull()
+     contenedorbuild.inside {
+       sh 'npm i'
        sh 'npm start'
-       sh 'npm test'
      }
    }                
 }
