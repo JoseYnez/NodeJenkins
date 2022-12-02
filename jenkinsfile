@@ -14,7 +14,8 @@ node {
      }
    }    
    stage('build') {
-     sh 'ls'
-     sh 'Dockerfile up -d'
+     sh 'docker-compose stop'
+     sh 'docker-compose build'
+     sh 'docker-compose up -d'
    }                
 }

@@ -1,6 +1,13 @@
-FROM node:12
-WORKDIR /appnodejs
-ADD . /appnodejs
+FROM node:alpine
+
+WORKDIR /var/www
+
+COPY package.json .
+
 RUN npm install
+
+COPY . .
+
 EXPOSE 3000
-CMD npm start
+
+CMD ["node", "index.js"]
