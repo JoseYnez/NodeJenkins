@@ -14,8 +14,8 @@ node {
      }
    }    
    stage('build') {
-     sh 'docker-compose down'
      sh 'docker-compose build'
+     sh 'docker-compose down'
      sh 'docker-compose up -d'
    }                
 }
