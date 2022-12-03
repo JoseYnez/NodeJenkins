@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-  res.send('Hello World! Hola Mundo!');
+  res.send('Hola Mundo!');
 });
 
 app.get('/hola', function (req, res) {
@@ -17,6 +17,10 @@ app.get('/ayuda', function (req, res) {
   res.send('AYUDA');
 });
 app.get('/ayuda2', function (req, res) {
+  res.send('AYUDA');
+});
+
+app.get('/help', function (req, res) {
   res.send('AYUDA');
 });
 
