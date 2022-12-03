@@ -16,6 +16,9 @@ app.get('/quitate', function (req, res) {
 app.get('/ayuda', function (req, res) {
   res.send('AYUDA');
 });
+app.get('/ayuda2', function (req, res) {
+  res.send('AYUDA');
+});
 
 
 var server = app.listen(3000, function () {
